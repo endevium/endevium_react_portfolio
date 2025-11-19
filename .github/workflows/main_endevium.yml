@@ -61,6 +61,7 @@ jobs:
         with:
           app-name: 'endevium'
           slot-name: 'Production'
-          package: .
+          package: dist
 
           
+
