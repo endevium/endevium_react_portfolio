@@ -19,20 +19,21 @@ import trello from "./assets/trello.png";
 import figma from "./assets/figma.png";
 import canva from "./assets/canva.png";
 
-import wordluxe from './assets/wordluxe.svg';
+import wordluxe from './assets/wordluxe.png';
 import anatomyDetective from './assets/anatomy_detective.png';
-import dagudorms from './assets/dagudorms.svg';
+import dagudorms from './assets/dagudorms.png';
 import fokus from './assets/fokus.png';
-import scholarzone from './assets/scholarzone-logo.png';
+import scholarzone from './assets/scholarzone.png';
 import evacudesk from './assets/evacudesk.png';
-import './App.css'
+import sfme from './assets/sfme.png';
+import zvc from './assets/zerovision.png';
+import './App.css';
 
 
 function App() {
     const technologies = [
         { image: python, text: 'Python', type: 'Backend' },
         { image: reactIcon, text: 'React', type: 'Frontend' },
-        { image: reactNative, text: 'React Native', type: 'Frontend' },
         { image: kotlin, text: 'Kotlin', type: 'Frontend' },
         { image: jetpackCompose, text: 'Jetpack Compose', type: 'Frontend' },
         { image: javascript, text: 'JavaScript', type: 'Frontend' },
@@ -57,12 +58,14 @@ function App() {
 
     
     const projects = [
-        { image: wordluxe, width: '200px', height: '200px', name: 'Wordluxe', tags: ['Python'], info: 'A recreation of the popular game, Wordle, with fun and exciting twists. Built using Python and PyQT in 2023.', link: 'https://github.com/phosrei/wordluxe'},
-        { image: anatomyDetective, width: '350px', height: '200px', name: 'Anatomy Detective', tags: ['Java'], info: 'A quiz game developed for aspiring medical students to allow them to study the human anatomy easier. Built using Java in 2024.', link: 'https://github.com/endevium/AnatomyDetective'},
-        { image: dagudorms, width: '200px', height: '200px', name: 'DaguDorms', tags: ['HTML', 'CSS', 'JS'], info: 'A web application for students who are looking for dormitories in Dagupan City. Built using HTML, CSS, and JavaScript in 2024.', link: 'https://github.com/phosrei/dagudorms'},
-        { image: fokus, width: '200px', height: '200px', name: 'Fokus', tags: ['Kotlin', 'PHP', 'MySQL'], info: 'A pomodoro study technique timer application built for students. Built using Kotlin, PHP and MySQL in 2024.', link: 'https://github.com/endevium/Fokus'},
-        { image: scholarzone, width: '200px', height: '200px', name: 'ScholarZone', tags: ['Kotlin', 'Vue', 'MySQL'], info: 'A scholarship application and management system. Built using Kotlin, Vue, PHP, and MySQL in 2024.', link: 'https://github.com/endevium/ScholarZone'},
-        { image: evacudesk, width: '200px', height: '200px', name: 'EvacuDesk', tags: ['React', 'Node.js', 'MongoDB'], info: 'An evacuation center management system for CDRRMO in the Philippines. Built using ReactJS, TypeScript, Node.js, MongoDB in 2025.', link: 'https://github.com/endevium/EvacuDesk'}
+        { image: zvc, width: '375px', height: '200px', name: 'Zero Vision Coding: AI-Enhanced Arduino Braille Programming Platform for Blind and Visually Impaired Programmers', tags: ['Python', 'C++', 'Arduino', 'Ollama', 'FastAPI', 'Pandas'], info: 'An AI-enhanced Braille programming platform designed to empower blind and visually-impaired programmers by providing them with advanced tools that facilitate coding through an Arduino-based Braille keyboard.', link: 'http://github.com/endevium/ZeroVisionCoding'},
+        { image: sfme, width: '375px', height: '200px', name: 'University of Pangasinan Student Feedback and Module Evaluation System (with AI Sentiment Analysis and Blockchain)', tags: ['JavaScript', 'Python', 'React', 'Pandas', 'Hugging Face', 'Solidity', 'Jupyter', 'Django', 'PostgreSQL'], info: 'The UPang Student Feedback and Module Evaluation System centralizes anonymous student feedback, ensures integrity with a private blockchain (stores feedback hashes), and applies NLP-based sentiment analysis to provide actionable insights.', link: 'https://github.com/endevium/UPang-Student-Feedback-and-Module-Evaluation-System'},
+        { image: scholarzone, width: '375px', height: '260px', name: 'ScholarZone', tags: ['JavaScript', 'Kotlin', 'React', 'Tailwind', 'Node.js', 'MySQL'], info: 'A Scholarship Application and Management System designed to simplify the process of finding, applying for, and reviewing scholarships.', link: 'https://github.com/endevium/ScholarZone'},
+        { image: evacudesk, width: '375px', height: '200px', name: 'EvacuDesk', tags: ['React', 'Tailwind', 'Node.js', 'MongoDB'], info: 'An evacuation center management system for CDRRMO in the Philippines. Built using ReactJS, TypeScript, Node.js, MongoDB in 2025.', link: 'https://github.com/endevium/EvacuDesk'},
+        { image: fokus, width: '150px', height: '320px', name: 'Fokus', tags: ['Kotlin', 'Laravel', 'MySQL'], info: 'A pomodoro study technique timer application built for students. Built using Kotlin, PHP and MySQL in 2024.', link: 'https://github.com/endevium/Fokus'},
+        { image: wordluxe, width: '375px', height: '200px', name: 'Wordluxe', tags: ['Python'], info: 'A recreation of the popular game, Wordle, with fun and exciting twists. Built using Python and PyQT in 2023.', link: 'https://github.com/phosrei/wordluxe'},
+        { image: anatomyDetective, width: '250px', height: '200px', name: 'Anatomy Detective', tags: ['Java'], info: 'A quiz game developed for aspiring medical students to allow them to study the human anatomy easier. Built using Java in 2024.', link: 'https://github.com/endevium/AnatomyDetective'},
+        { image: dagudorms, width: '375px', height: '200px', name: 'DaguDorms', tags: ['HTML', 'CSS', 'JavaScript'], info: 'A web application for students who are looking for dormitories in Dagupan City. Built using HTML, CSS, and JavaScript in 2024.', link: 'https://github.com/phosrei/dagudorms'},
     ]
 
     return (
@@ -130,10 +133,10 @@ function App() {
 
                 <div className="about-main-container">
                     <div className="who-container-2">
-                        <p>I work with a modern tech stack that includes Frontend Development (React, React Native, Kotlin, Jetpack Compose, JavaScript, TypeScript), Backend Development (Node.js, PHP), and Databases (MySQL, MongoDB). I also use Trello for project management, AWS and Azure for cloud deployments, Git/GitHub for version control, and Figma/Canva for UI design.
+                        <p>I work with a modern tech stack that includes Frontend Development (React, Kotlin, Jetpack Compose, JavaScript, TypeScript), Backend Development (Django, Node.js, PHP), and Databases (MySQL, PostgreSQL, MongoDB). I also use Trello for project management, AWS and Azure for cloud deployments, Git/GitHub for version control, and Figma for UI design.
                             <br/>
                             <br/>
-                            I’ve worked on a variety of projects including a Wordle clone, an anatomy quiz app for medical students, a dorm reservation platform for Dagupan City, a premium Pomodoro timer app, a full Scholarship Application and Management System, and an Evacuation Center Management System.
+                            I’ve worked on a variety of projects including a Wordle clone, an anatomy quiz app for medical students, a dorm reservation platform for Dagupan City, a premium Pomodoro timer app, a full Scholarship Application and Management System, an Evacuation Center Management System, a student feedback and module evaluation system for University of Pangasinan, and an arduino braille programming platform for blind and visually-impaired individuals.
                         </p>
                     </div>
                 </div>
@@ -180,9 +183,11 @@ function App() {
                     <div className="project-card-container">
                         {projects.map((project) => (
                             <div className="project-card">
-                                <a href="#">
-                                    <img src={project.image} style={{ width: project.width, height: project.height}} />
-                                </a>
+                                <div className="project-card-media">
+                                    <a href="#">
+                                        <img className="project-card-img" src={project.image} alt={project.name} style={{ width: project.width, height: project.height}}/>
+                                    </a>
+                                </div>
                                 <div className="project-card-info">
                                     <a className="project-name" href={project.link} target="_blank">{project.name}</a>
                                     <div className="project-tags">
