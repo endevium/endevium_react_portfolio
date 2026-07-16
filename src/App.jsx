@@ -17,7 +17,7 @@ import aws from "./assets/aws.png";
 import azure from "./assets/azure.png";
 import trello from "./assets/trello.png";
 import figma from "./assets/figma.png";
-import canva from "./assets/canva.png";
+import postgres from "./assets/postgres.png";
 
 import wordluxe from './assets/wordluxe.png';
 import anatomyDetective from './assets/anatomy_detective.png';
@@ -46,7 +46,7 @@ function App() {
         { image: azure, text: 'Azure', type: 'Cloud' },
         { image: trello, text: 'Trello', type: 'Project Management' },
         { image: figma, text: 'Figma', type: 'UI/UX' },
-        { image: canva, text: 'Canva', type: 'UI/UX' }
+        { image: postgres, text: 'PostgreSQL', type: 'Database'}
     ]
 
     const categories = ['All','Frontend','Backend','Database','UI/UX','Cloud'];
@@ -58,7 +58,7 @@ function App() {
 
     
     const projects = [
-        { image: zvc, width: '375px', height: '200px', name: 'Zero Vision Coding: AI-Enhanced Arduino Braille Programming Platform for Blind and Visually Impaired Programmers', tags: ['Python', 'C++', 'Arduino', 'Ollama', 'FastAPI', 'Pandas'], info: 'An AI-enhanced Braille programming platform designed to empower blind and visually-impaired programmers by providing them with advanced tools that facilitate coding through an Arduino-based Braille keyboard.', link: 'http://github.com/endevium/ZeroVisionCoding'},
+        { image: zvc, width: '375px', height: '200px', name: 'Zero Vision Coding: AI-Enhanced Arduino Braille Programming Platform for Blind and Visually Impaired Programmers', tags: ['Python', 'JavaScript', 'C++', 'Arduino', 'Ollama', 'FastAPI', 'Pandas'], info: 'An AI-enhanced Braille programming platform designed to empower blind and visually-impaired programmers by providing them with advanced tools that facilitate coding through an Arduino-based Braille keyboard. It integrates Braille input, text-to-speech, voice commands, and AI-assisted code guidance. Presented the project at an International Research Conference (Indonesia, June 2026).', link: 'http://github.com/endevium/ZeroVisionCoding'},
         { image: sfme, width: '375px', height: '200px', name: 'University of Pangasinan Student Feedback and Module Evaluation System (with AI Sentiment Analysis and Blockchain)', tags: ['JavaScript', 'Python', 'React', 'Pandas', 'Hugging Face', 'Solidity', 'Jupyter', 'Django', 'PostgreSQL'], info: 'The UPang Student Feedback and Module Evaluation System centralizes anonymous student feedback, ensures integrity with a private blockchain (stores feedback hashes), and applies NLP-based sentiment analysis to provide actionable insights.', link: 'https://github.com/endevium/UPang-Student-Feedback-and-Module-Evaluation-System'},
         { image: scholarzone, width: '375px', height: '260px', name: 'ScholarZone', tags: ['JavaScript', 'Kotlin', 'React', 'Tailwind', 'Node.js', 'MySQL'], info: 'A Scholarship Application and Management System designed to simplify the process of finding, applying for, and reviewing scholarships.', link: 'https://github.com/endevium/ScholarZone'},
         { image: evacudesk, width: '375px', height: '200px', name: 'EvacuDesk', tags: ['JavaScript', 'React', 'Tailwind', 'Node.js', 'MongoDB'], info: 'An evacuation center management system for CDRRMO in the Philippines. Built using ReactJS, JavaScript, Node.js, MongoDB in 2025.', link: 'https://github.com/endevium/EvacuDesk'},
@@ -81,17 +81,17 @@ function App() {
             </div>
 
             <div className="grid-scan" aria-hidden="true">
-                <GridScan
+                {/* <GridScan
                     sensitivity={0.55}
                     lineThickness={1}
                     linesColor="#161616"
-                    gridScale={0.1}
                     scanColor="#ae9eff"
                     scanOpacity={0.2}
-                    bloomIntensity={0.6}
-                    chromaticAberration={0.002}
-                    noiseIntensity={0.01}
-                />
+                    bloomIntensity={0.2}
+                    noiseIntensity={0.003}
+                    chromaticAberration={0.001}
+                    gridScale={0.2}
+                /> */}
             </div>
 
             <div id="home" className="home-div">
@@ -116,10 +116,10 @@ function App() {
             <div style={{ width: '99%', height: '130vw', position: 'absolute' }}>
                 <Particles
                     particleColors={['#ffffff', '#ffffff']}
-                    particleCount={200}
-                    particleSpread={10}
+                    particleCount={100}
+                    particleSpread={5}
                     speed={0.1}
-                    particleBaseSize={100}
+                    particleBaseSize={50}
                     moveParticlesOnHover={true}
                     alphaParticles={false}
                     disableRotation={false}
@@ -166,7 +166,7 @@ function App() {
                             bend={0} 
                             textColor="#ffffff" 
                             borderRadius={0.05} 
-                            scrollEase={0.02}
+                            scrollEase={0.08}
                         />
                     </div>
                 </div>
